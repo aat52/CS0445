@@ -1,0 +1,54 @@
+Section 1:  TRUE / FALSE  1 pt each
+
+1)  F When you extend a class you are required to write a constructor.
+	
+2)  T By using the keyword super you can invoke a method that resides in your parent's class
+
+3)  F You can extend multiple classes - i.e. your new class can have multiple immediate parents
+
+4)  T You can implement multiple interfaces.
+
+5)  F You can declare all your constuctors as private.
+
+6)  F Polymorphism means wherever a reference (non primitive) type is expected I can use an object of the same type or its parent type.
+
+7)  F Polymorphism means anywhere any primitive is expected I can use any object type and it will automatically and convert between any type to any type.
+
+8)  T All classes have Object (capital "O") type as thier ancestor.
+
+9)  T The search operation on a HashSet is faster than a search into an unsorted array. 
+
+10)  T The search operation on a HashSet is faster than a search into an sorted array. 
+
+11)  F The search for an element in a TreeSet is faster that a search on a sorted array. (they are the same  log2N)
+
+12) T When you pass a reference variable into a method, you cannot change the actual value inside that ref var because you were just passing a copy of the value.
+ 
+
+Section 2: Free response 2 pts each   
+
+
+1) What is the difference betwen deep and shallow copy?    DEEP COPIES THe DATA. SHALOW COPIES THe REFERENCE 
+
+2) What benefits does inheritence bring to a Java programmer programmer?  CODE REUSE, POLyMORPHISM
+	
+3) Why should the data members of a class be private instead of public?   PREVENT CLIENT CODE FROM DIRECT ACCESS
+	
+4) Name one difference between a checked and an unchecked exception.      CHECKED EXCEPTIONS MUST BE THROWN OR CAUGHT
+
+5) Name a Java class (class, not interface) that is good for representing members of a group and doing matHematical 
+operations such as membership, intersection or union.                    TREESET OR HASHET
+	
+	
+7) Why does TreeSet insist that any type you put into it implements Comparable?  HAS TO KEEP THEM SORTED
+	 
+
+SHORT ANSWER QUESTIONS
+
+8)	Suppose you are implementing an interface and you are writing one of the methods that is required by that interface. 
+Further assume you have a line of code in that required method that could throw a checked exception - i.e. you are opening a file.  
+In order to appease the compiler requirement that you do something about checked exceptions - what could you do to make it compile and run correctly?
+
+a)  Just tack a “throws Exception” clause onto the end of the signature of the method you are writing
+b)  wrap the code that opens the file in a try/catch block  <= THIS ONE
+c)  either (a) or (b) would work
